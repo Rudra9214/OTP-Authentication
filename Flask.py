@@ -43,7 +43,7 @@ def getOTPnow(emailid):
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
     emailid = emailid
-    s.login(emailid, "krufftuknbcqdcgx")
+    s.login(emailid, "App Password")
     s.sendmail('&&&&&&',emailid,otp)    
 if __name__=='__main__':
     app.run(debug='True')
